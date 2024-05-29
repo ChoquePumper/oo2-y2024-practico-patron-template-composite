@@ -6,8 +6,9 @@ public class Paquete extends Seguro {
 	private static final float PC_DESCUENTO = 5;
 	private List<Seguro> seguros;
 
-	public Paquete(String nombre) {
+	public Paquete(String nombre, List<Seguro> seguros) {
 		super(nombre);
+		this.seguros = List.copyOf(seguros);
 	}
 
 	@Override
