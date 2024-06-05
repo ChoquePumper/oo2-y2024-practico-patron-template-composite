@@ -1,7 +1,7 @@
 package oo2.practico4.ejercicio4;
 
 public class CalculadorNoJubilado extends Calculador {
-	private LogTransaction log;
+	private LogTransaction log = new LogTransaction();
 
 	public CalculadorNoJubilado(int mesEnPromocion) {
 		super(mesEnPromocion);
